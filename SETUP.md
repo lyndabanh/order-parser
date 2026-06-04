@@ -25,13 +25,13 @@ This guide is written for non-technical users on macOS. Windows is not supported
 
 ### Option B: If you are setting it up from GitHub
 
-1. You will need a free GitHub account — sign up at [github.com](https://github.com)
-2. Open Terminal (press Cmd + Space, type "Terminal", press Enter)
+1. Open Terminal (press Cmd + Space, type "Terminal", press Enter)
+2. Copy and paste this command, then press Enter:
+   ```
+   cd ~/Desktop && git clone https://github.com/lyndabanh/order-parser.git
+   ```
+   If the command above doesn't work, reach out for an updated link.
 3. Copy and paste this command, then press Enter:
-   ```
-   cd ~/Desktop && git clone https://github.com/yourusername/order-parser.git
-   ```
-4. Copy and paste this command, then press Enter:
    ```
    chmod +x ~/Desktop/order-parser/run_me.command
    ```
