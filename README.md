@@ -52,34 +52,7 @@ python parse_orders.py order.pdf
 
 Output CSVs are written to `output/` with the same name as the input PDF. Processed PDFs are moved to `input/processed/` automatically.
 
-For non-technical users, a `run_me.command` shell script is included. Double-clicking it from Finder runs the tool without needing a terminal.
-
-## Distribution
-
-To share this tool with a non-technical user, send them a folder containing:
-
-```
-Order Parser/
-├── input/          ← drop PDF files here
-├── output/         ← converted CSVs appear here
-├── parse_orders.py
-├── requirements.txt
-└── run_me.command
-```
-
-Do not include `venv/` — the script will create it automatically on first run.
-
-The recipient needs Python 3 installed. On first run, `run_me.command` will install all dependencies automatically. If double-clicking gives a permissions error, run this once in Terminal:
-
-```bash
-chmod +x run_me.command
-```
-
-After that, double-clicking will work permanently.
-
-## Setup
-
-For development:
+## Developer Setup
 
 ```bash
 python3 -m venv venv
@@ -87,4 +60,8 @@ source venv/bin/activate
 pip install -r requirements-dev.txt
 ```
 
-`requirements.txt` contains only the direct dependencies (`pdfplumber` and `requests`) and is used by `run_me.command` when setting up on a user's machine. `requirements-dev.txt` contains fully pinned versions of all dependencies for a reproducible development environment.
+`requirements.txt` contains only the direct dependencies and is used by `run_me.command` when setting up on a user's machine. `requirements-dev.txt` contains fully pinned versions for a reproducible development environment.
+
+## Non-Technical Users
+
+See [SETUP.md](SETUP.md) for plain-English setup and installation instructions.
