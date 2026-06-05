@@ -48,7 +48,11 @@ Processed PDFs are automatically moved to `input/processed/` so they won't be co
 
 ## Getting updates
 
+### If you set up from GitHub
 To get the latest version, open Terminal and run:
 ```
 cd ~/Desktop/order-parser && git pull
 ```
+
+### If you received a folder by email
+Reach out for an updated zip file.
